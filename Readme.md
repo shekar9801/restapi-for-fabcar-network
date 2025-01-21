@@ -50,5 +50,7 @@ cd /home/fabric-samples/test-network
 ./network.sh createChannel -c mychannel
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 ```
+#### For creating the api 
+https://kctheservant.medium.com/rework-an-implementation-of-api-server-for-hyperledger-fabric-network-fabric-v2-2-a747884ce3dc
 
 
