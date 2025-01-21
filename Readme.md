@@ -17,9 +17,14 @@ sudo apt-get install python3.8 python3-pip -y
 ##### 3. Install Node.js 14.x and npm:
 
 ```
-curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+nvm install node14
+node -v
 ```
+
+
 ##### 4. Download Go 1.14 (required for Hyperledger Fabric 2.2):
 
 ```
