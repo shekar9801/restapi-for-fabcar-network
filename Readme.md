@@ -39,4 +39,16 @@ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+##### 6. Install Hyperledger fabric 2.2.0 
+
+```
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.0
+```
+```
+cd /home/fabric-samples/test-network
+./network.sh up
+./network.sh createChannel -c mychannel
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
+```
+
 
